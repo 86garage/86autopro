@@ -1,0 +1,49 @@
+/* ============================================================
+   Order Flow — extends styles.css
+   ============================================================ */
+
+.order-hero {
+  position: relative; overflow: hidden;
+  min-height: 32vh; display: flex; align-items: center; justify-content: center;
+  text-align: center; padding: 110px 24px 40px;
+}
+.order-hero h1 {
+  position: relative; z-index: 1;
+  font-size: clamp(28px, 4vw, 42px); font-weight: 800; letter-spacing: -0.02em;
+}
+
+.order-main { max-width: 560px; margin: 0 auto; padding: 20px 24px 120px; }
+.order-step { display: flex; flex-direction: column; gap: 22px; }
+
+.order-summary, .order-form, .payment-card { padding: 30px 32px; }
+.order-summary h3, .payment-card h3 { font-size: 18px; font-weight: 800; margin-bottom: 16px; }
+.order-summary .info-row:last-child { border-bottom: none; }
+
+.summary-body { display: flex; gap: 18px; align-items: flex-start; }
+.summary-image { width: 64px; aspect-ratio: 9/16; object-fit: cover; border-radius: 10px; background: rgba(255,255,255,0.05); flex-shrink: 0; }
+.summary-details { flex: 1; min-width: 0; }
+
+.order-error { min-height: 40vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 14px; padding: 24px; }
+.order-error h2 { font-size: 24px; font-weight: 800; }
+.order-error p { color: var(--text-secondary); font-size: 15px; max-width: 40ch; }
+
+.order-form label { display: block; font-size: 13px; color: var(--text-secondary); margin-top: 18px; margin-bottom: 8px; }
+.order-form label:first-child { margin-top: 0; }
+.order-form input {
+  width: 100%; padding: 13px 16px; border-radius: 12px;
+  border: 1px solid var(--card-border); background: rgba(255,255,255,0.03);
+  color: var(--text); font-family: inherit; font-size: 14px;
+  transition: border-color 0.3s var(--ease), background 0.3s var(--ease);
+}
+.order-form input:focus { outline: none; border-color: rgba(255,255,255,0.3); background: rgba(255,255,255,0.06); }
+.order-form .btn-primary { margin-top: 26px; width: 100%; }
+.form-error { margin-top: 14px; color: var(--red); font-size: 13px; }
+
+.payment-card { text-align: center; }
+.qr-box {
+  width: 208px; height: 208px; margin: 4px auto 0;
+  background: #fff; border-radius: 18px; padding: 14px;
+  display: flex; align-items: center; justify-content: center;
+}
+.payment-note { margin-top: 18px; color: var(--text-secondary); font-size: 14px; }
+.payment-card .btn-cta { margin-top: 22px; width: 100%; }

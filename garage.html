@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>86AutoPro — Garage</title>
+<meta name="description" content="86AutoPro Garage — every vehicle we've sold and delivered.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="pre-load">
+
+<div class="preloader" id="preloader">
+  <div class="preloader-glow"></div>
+  <img class="preloader-logo" id="preloaderLogo" src="assets/logo.png" alt="86AutoPro">
+</div>
+
+<div class="cursor-glow" id="cursorGlow"></div>
+<div class="dust-layer" id="dustLayer"></div>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">86<span>AutoPro</span></a>
+    <a href="index.html#marketplace" class="nav-cta">Marketplace</a>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="glow glow-red"></div>
+  <div class="glow glow-blue"></div>
+
+  <div class="hero-cars" id="heroCars">
+    <svg class="car car-left" viewBox="0 0 400 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20 120 C20 100 50 95 75 90 L110 55 C120 45 135 40 150 40 L260 40 C280 40 295 48 305 62 L330 90 C355 92 380 98 380 120 L380 130 L20 130 Z" stroke="#FF3B3B" stroke-width="1.5" opacity="0.8"/>
+      <circle cx="95" cy="130" r="22" stroke="#FFFFFF" stroke-width="1.5" opacity="0.6"/>
+      <circle cx="300" cy="130" r="22" stroke="#FFFFFF" stroke-width="1.5" opacity="0.6"/>
+      <line x1="160" y1="45" x2="160" y2="85" stroke="#FF3B3B" stroke-width="1" opacity="0.4"/>
+      <line x1="245" y1="45" x2="245" y2="85" stroke="#FF3B3B" stroke-width="1" opacity="0.4"/>
+    </svg>
+    <svg class="car car-right" viewBox="0 0 400 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20 120 C20 100 50 95 75 90 L110 55 C120 45 135 40 150 40 L260 40 C280 40 295 48 305 62 L330 90 C355 92 380 98 380 120 L380 130 L20 130 Z" stroke="#007BFF" stroke-width="1.5" opacity="0.8"/>
+      <circle cx="95" cy="130" r="22" stroke="#FFFFFF" stroke-width="1.5" opacity="0.6"/>
+      <circle cx="300" cy="130" r="22" stroke="#FFFFFF" stroke-width="1.5" opacity="0.6"/>
+      <line x1="160" y1="45" x2="160" y2="85" stroke="#007BFF" stroke-width="1" opacity="0.4"/>
+      <line x1="245" y1="45" x2="245" y2="85" stroke="#007BFF" stroke-width="1" opacity="0.4"/>
+    </svg>
+  </div>
+
+  <div class="hero-content">
+    <h1 class="hero-logo" id="heroLogo">86<span>AutoPro</span> Garage</h1>
+    <p class="hero-subtitle" id="heroSubtitle">Hall Of Fame Collection</p>
+    <p class="hero-tagline" id="heroTagline">Previously sold vehicles and successful deliveries.</p>
+  </div>
+
+  <div class="scroll-hint"><span></span></div>
+</section>
+
+<!-- ============ HALL OF FAME — ALL SOLD CARS ============ -->
+<section class="section hall-of-fame" id="hall-of-fame">
+  <img class="watermark" src="assets/logo.png" alt="" aria-hidden="true">
+  <div class="section-head fade-up"><h2>Hall Of Fame</h2><p>Every vehicle 86AutoPro has sold</p></div>
+
+  <div class="grid-loading" id="soldLoading"><div class="spinner"></div><p>Loading vehicles…</p></div>
+  <div class="grid-error" id="soldError" hidden><p>No sold vehicles on record yet.</p></div>
+  <div class="marketplace-grid" id="soldGrid"></div>
+</section>
+
+<!-- ============ STATISTICS ============ -->
+<section class="section stats" id="stats">
+  <div class="stats-grid">
+    <div class="stat-item fade-up"><span class="stat-number" data-target="50" data-suffix="+">0</span><span class="stat-label">Cars Sold</span></div>
+    <div class="stat-item fade-up"><span class="stat-number" data-target="100" data-suffix="%">0</span><span class="stat-label">Trusted</span></div>
+    <div class="stat-item fade-up"><span class="stat-number" data-static="24/7">0</span><span class="stat-label">Instant Delivery</span></div>
+    <div class="stat-item fade-up"><span class="stat-number" data-static="Premium">0</span><span class="stat-label">Garage</span></div>
+  </div>
+</section>
+
+<!-- ============ WHY CUSTOMERS TRUST 86AUTOPRO ============ -->
+<section class="section trust">
+  <div class="section-head fade-up"><h2>Why Customers Trust 86AutoPro</h2></div>
+  <div class="reviews-grid">
+    <div class="review-card fade-up">
+      <h3 class="trust-title">Verified Deliveries</h3>
+      <p>Every sale on this page was checked and confirmed delivered — no exceptions.</p>
+    </div>
+    <div class="review-card fade-up">
+      <h3 class="trust-title">Rare Builds</h3>
+      <p>We source and sell vehicles that are genuinely hard to find elsewhere.</p>
+    </div>
+    <div class="review-card fade-up">
+      <h3 class="trust-title">Trusted Marketplace</h3>
+      <p>Direct trades with R3Y or FEROX — no middlemen, no scams, ever.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ENTER MARKETPLACE ============ -->
+<section class="section marketplace-cta">
+  <div class="cta-divider fade-up"></div>
+  <div class="cta-box fade-up">
+    <h3>Ready To Explore Available Vehicles?</h3>
+    <p>Browse every available CPM vehicle currently in stock.</p>
+    <button class="btn-cta magnetic" id="enterMarketplaceBtn">Enter Marketplace</button>
+  </div>
+  <div class="cta-divider fade-up"></div>
+</section>
+
+<footer class="footer">
+  <img class="footer-logo-img" src="assets/logo.png" alt="86AutoPro">
+  <p class="footer-copy">Premium CPM Marketplace</p>
+  <div class="footer-links">
+    <a href="https://www.instagram.com/r3ycpm" target="_blank" rel="noopener">Instagram</a>
+    <a href="index.html#contact">Contact</a>
+    <a href="index.html#marketplace">Marketplace</a>
+    <a href="#terms">Terms</a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="garage.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>86AutoPro — Order Confirmed</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="success.css">
+</head>
+<body>
+
+<div class="success-screen" id="stepSuccess">
+  <div class="success-glow"></div>
+  <canvas id="confettiCanvas"></canvas>
+  <img class="success-logo" src="assets/logo.png" alt="86AutoPro">
+  <div class="success-check">
+    <svg viewBox="0 0 80 80">
+      <circle cx="40" cy="40" r="35"/>
+      <path d="M24 41 L35 52 L57 28"/>
+    </svg>
+  </div>
+  <h2>Payment Received</h2>
+  <p>Your order has been submitted successfully.<br>Our team will contact you soon.</p>
+  <p class="success-thanks">Thank you for choosing 86AutoPro.</p>
+  <div class="success-buttons">
+    <a href="index.html" class="btn-primary magnetic">Return to Home</a>
+    <a href="index.html#marketplace" class="btn-glass magnetic">View Marketplace</a>
+  </div>
+</div>
+
+<script src="success.js"></script>
+</body>
+</html>

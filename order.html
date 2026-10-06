@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>86AutoPro — Checkout</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="order.css">
+</head>
+<body class="pre-load">
+
+<div class="preloader" id="preloader">
+  <div class="preloader-glow"></div>
+  <img class="preloader-logo" id="preloaderLogo" src="assets/logo.png" alt="86AutoPro">
+</div>
+
+<div class="cursor-glow" id="cursorGlow"></div>
+<div class="dust-layer" id="dustLayer"></div>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">86<span>AutoPro</span></a>
+    <a href="index.html#marketplace" class="nav-cta">Marketplace</a>
+  </div>
+</nav>
+
+<section class="order-hero">
+  <div class="glow glow-red"></div>
+  <div class="glow glow-blue"></div>
+  <h1 id="stepTitle">86AutoPro Checkout</h1>
+</section>
+
+<main class="order-main">
+
+  <div class="grid-loading" id="orderLoading"><div class="spinner"></div><p>Loading order details…</p></div>
+  <div class="order-error" id="orderError" hidden>
+    <h2>Vehicle data missing</h2>
+    <p>We couldn't find the vehicle for this order. Please head back and select it again.</p>
+    <a href="index.html#marketplace" class="btn-primary">Back to Marketplace</a>
+  </div>
+
+  <!-- ============ STEP 1: CHECKOUT ============ -->
+  <div class="order-step" id="stepCheckout" hidden>
+    <div class="glass-card order-summary fade-up">
+      <h3>Order Summary</h3>
+      <div class="summary-body">
+        <img id="summaryImage" class="summary-image" alt="" hidden>
+        <div class="summary-details">
+          <div class="info-row"><span>Car</span><strong id="summaryName">—</strong></div>
+          <div class="info-row"><span>Price</span><strong id="summaryPrice">—</strong></div>
+        </div>
+      </div>
+    </div>
+    <div class="glass-card order-form fade-up">
+      <label for="inputName">Full Name</label>
+      <input type="text" id="inputName" placeholder="Your full name" autocomplete="name">
+      <label for="inputInstagram">Instagram ID</label>
+      <input type="text" id="inputInstagram" placeholder="@yourhandle" autocomplete="off">
+      <p class="form-error" id="formError" hidden>Please fill in both fields.</p>
+      <button class="btn-primary magnetic" id="continueBtn">Continue</button>
+    </div>
+  </div>
+
+  <!-- ============ STEP 2: PAYMENT ============ -->
+  <div class="order-step" id="stepPayment" hidden>
+    <div class="glass-card payment-card fade-up">
+      <h3>Scan &amp; Pay</h3>
+      <div class="qr-box" id="qrCode"></div>
+      <p class="payment-note">Scan the QR code to complete your payment, then confirm below.</p>
+      <button class="btn-cta magnetic" id="paidBtn">I Have Paid</button>
+    </div>
+  </div>
+
+</main>
+
+<footer class="footer">
+  <img class="footer-logo-img" src="assets/logo.png" alt="86AutoPro">
+  <p class="footer-copy">Premium CPM Marketplace</p>
+  <div class="footer-links">
+    <a href="https://www.instagram.com/r3ycpm" target="_blank" rel="noopener">Instagram</a>
+    <a href="index.html#contact">Contact</a>
+    <a href="index.html#marketplace">Marketplace</a>
+    <a href="#terms">Terms</a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="order.js"></script>
+</body>
+</html>

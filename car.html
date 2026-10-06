@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>86AutoPro — Vehicle Details</title>
+<meta name="description" content="86AutoPro vehicle details — premium CPM marketplace.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="car.css">
+</head>
+<body class="car-page pre-load">
+
+<div class="preloader" id="preloader">
+  <div class="preloader-glow"></div>
+  <img class="preloader-logo" id="preloaderLogo" src="assets/logo.png" alt="86AutoPro">
+</div>
+
+<div class="cursor-glow" id="cursorGlow"></div>
+<div class="dust-layer" id="dustLayer"></div>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">86<span>AutoPro</span></a>
+    <a href="index.html#marketplace" class="nav-cta">Marketplace</a>
+  </div>
+</nav>
+
+<main id="carRoot">
+  <!-- Populated by car.js. Shown while loading: -->
+  <div class="car-loading" id="carLoading">
+    <div class="spinner"></div>
+    <p>Loading vehicle…</p>
+  </div>
+
+  <div class="car-error" id="carError" hidden>
+    <h2>Vehicle not found</h2>
+    <p>This listing may have been removed or the link is incorrect.</p>
+    <a href="index.html#marketplace" class="btn-primary">Back to Marketplace</a>
+  </div>
+
+  <div class="car-content" id="carContent" hidden>
+
+    <!-- ============ HERO ============ -->
+    <section class="detail-hero">
+      <div class="detail-hero-image fade-up" id="heroImage"></div>
+      <div class="detail-hero-info fade-up">
+        <span class="status-badge" id="statusBadge">Available</span>
+        <h1 class="detail-name" id="carName">Vehicle Name</h1>
+        <p class="detail-price" id="carPrice">$0</p>
+        <p class="detail-owner">Owner: <span id="carOwner">—</span></p>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="section gallery-section">
+      <div class="section-head fade-up"><h2>Vehicle Gallery</h2></div>
+      <div class="gallery fade-up">
+        <div class="gallery-main" id="galleryMain"></div>
+        <div class="gallery-thumbs" id="galleryThumbs"></div>
+      </div>
+    </section>
+
+    <!-- ============ VEHICLE INFORMATION ============ -->
+    <section class="section info-section">
+      <div class="section-head fade-up"><h2>Vehicle Information</h2></div>
+      <div class="info-card glass-card fade-up">
+        <div class="info-row"><span>Car Name</span><strong id="infoName">—</strong></div>
+        <div class="info-row"><span>Price</span><strong id="infoPrice">—</strong></div>
+        <div class="info-row"><span>Status</span><strong id="infoStatus">—</strong></div>
+        <div class="info-row"><span>Owner</span><strong id="infoOwner">—</strong></div>
+      </div>
+
+      <div class="detail-buttons fade-up">
+        <button class="btn-glass magnetic" id="addToCartBtn">Add to Cart</button>
+        <button class="btn-primary magnetic" id="buyNowBtn">Buy Now</button>
+      </div>
+    </section>
+
+    <!-- ============ RELATED VEHICLES ============ -->
+    <section class="section related-section">
+      <div class="section-head fade-up"><h2>Related Vehicles</h2></div>
+      <div class="featured-grid" id="relatedGrid"></div>
+    </section>
+
+  </div>
+</main>
+
+<footer class="footer">
+  <img class="footer-logo-img" src="assets/logo.png" alt="86AutoPro">
+  <p class="footer-copy">Premium CPM Marketplace</p>
+  <div class="footer-links">
+    <a href="https://www.instagram.com/r3ycpm" target="_blank" rel="noopener">Instagram</a>
+    <a href="index.html#contact">Contact</a>
+    <a href="index.html#marketplace">Marketplace</a>
+    <a href="#terms">Terms</a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="car.js"></script>
+</body>
+</html>
