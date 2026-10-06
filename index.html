@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>86AutoPro — Premium CPM Marketplace</title>
+<meta name="description" content="86AutoPro — Rare builds, trusted sales, instant delivery. Premium Car Parking Multiplayer marketplace.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="pre-load">
+
+<div class="preloader" id="preloader">
+  <div class="preloader-glow"></div>
+  <img class="preloader-logo" id="preloaderLogo" src="assets/logo.png" alt="86AutoPro">
+</div>
+
+<div class="logo-reveal" id="logoReveal">
+  <div class="logo-reveal-glow"></div>
+  <img class="logo-reveal-img" src="assets/logo.png" alt="86AutoPro">
+</div>
+
+<div class="cursor-glow" id="cursorGlow"></div>
+<div class="dust-layer" id="dustLayer"></div>
+
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">86<span>AutoPro</span></a>
+    <a href="#marketplace" class="nav-cta">Marketplace</a>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="hero">
+  <div class="glow glow-red" id="glowRed"></div>
+  <div class="glow glow-blue" id="glowBlue"></div>
+
+  <div class="hero-cars" id="heroCars">
+    <svg class="car car-left" viewBox="0 0 400 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20 120 C20 100 50 95 75 90 L110 55 C120 45 135 40 150 40 L260 40 C280 40 295 48 305 62 L330 90 C355 92 380 98 380 120 L380 130 L20 130 Z" stroke="#FF3B3B" stroke-width="1.5" opacity="0.8"/>
+      <circle cx="95" cy="130" r="22" stroke="#FFFFFF" stroke-width="1.5" opacity="0.6"/>
+      <circle cx="300" cy="130" r="22" stroke="#FFFFFF" stroke-width="1.5" opacity="0.6"/>
+      <line x1="160" y1="45" x2="160" y2="85" stroke="#FF3B3B" stroke-width="1" opacity="0.4"/>
+      <line x1="245" y1="45" x2="245" y2="85" stroke="#FF3B3B" stroke-width="1" opacity="0.4"/>
+    </svg>
+    <svg class="car car-right" viewBox="0 0 400 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20 120 C20 100 50 95 75 90 L110 55 C120 45 135 40 150 40 L260 40 C280 40 295 48 305 62 L330 90 C355 92 380 98 380 120 L380 130 L20 130 Z" stroke="#007BFF" stroke-width="1.5" opacity="0.8"/>
+      <circle cx="95" cy="130" r="22" stroke="#FFFFFF" stroke-width="1.5" opacity="0.6"/>
+      <circle cx="300" cy="130" r="22" stroke="#FFFFFF" stroke-width="1.5" opacity="0.6"/>
+      <line x1="160" y1="45" x2="160" y2="85" stroke="#007BFF" stroke-width="1" opacity="0.4"/>
+      <line x1="245" y1="45" x2="245" y2="85" stroke="#007BFF" stroke-width="1" opacity="0.4"/>
+    </svg>
+  </div>
+
+  <div class="hero-content" id="heroContent">
+    <h1 class="hero-logo" id="heroLogo">86<span>AutoPro</span></h1>
+    <p class="hero-subtitle" id="heroSubtitle">Premium CPM Marketplace</p>
+    <p class="hero-tagline" id="heroTagline">Rare Builds &nbsp;•&nbsp; Trusted Sales &nbsp;•&nbsp; Instant Delivery</p>
+    <button class="btn-primary magnetic" id="browseCarsBtn">Browse Cars</button>
+  </div>
+
+  <div class="scroll-hint"><span></span></div>
+</section>
+
+<!-- ============ FEATURED CARS ============ -->
+<section class="section featured" id="featured">
+  <div class="section-head fade-up"><h2>Featured Vehicles</h2><p>Hand-picked premium CPM vehicles</p></div>
+
+  <div class="grid-loading" id="featuredLoading"><div class="spinner"></div><p>Loading vehicles…</p></div>
+  <div class="grid-error" id="featuredError" hidden><p>Couldn't load featured vehicles right now.</p></div>
+  <div class="featured-grid" id="featuredGrid"></div>
+
+  <div class="cta-divider fade-up"></div>
+  <div class="cta-box fade-up">
+    <h3>Ready to explore the full garage?</h3>
+    <p>Browse all available CPM vehicles carefully selected by 86AutoPro.</p>
+    <button class="btn-cta magnetic" id="enterMarketplaceBtn">Enter Marketplace</button>
+  </div>
+  <div class="cta-divider fade-up"></div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="section about" id="about">
+  <img class="watermark" src="assets/logo.png" alt="" aria-hidden="true">
+  <div class="about-visual fade-up"><div class="about-glass"><div class="about-badge">Est. 2026</div></div></div>
+  <div class="about-text fade-up">
+    <h2>Why 86AutoPro?</h2>
+    <p>Premium CPM vehicles carefully selected for quality, rarity and value.</p>
+    <ul class="about-points">
+      <li>Every listing verified before it goes live</li>
+      <li>Direct trades — no middlemen, no delays</li>
+      <li>Delivery handled the moment a deal closes</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ MARKETPLACE PREVIEW ============ -->
+<section class="section marketplace" id="marketplace">
+  <img class="watermark" src="assets/logo.png" alt="" aria-hidden="true">
+  <div class="section-head fade-up"><h2>Marketplace</h2><p>Available now. Sold builds stay listed for reference.</p></div>
+  <div class="grid-loading" id="marketplaceLoading"><div class="spinner"></div><p>Loading vehicles…</p></div>
+  <div class="grid-error" id="marketplaceError" hidden><p>No vehicles available right now. Check back soon.</p></div>
+  <div class="marketplace-grid" id="marketplaceGrid"></div>
+</section>
+
+<!-- ============ HALL OF FAME ============ -->
+<section class="section hall-of-fame" id="hall-of-fame">
+  <img class="watermark" src="assets/logo.png" alt="" aria-hidden="true">
+  <div class="section-head fade-up"><h2>Hall Of Fame</h2><p>Previously Sold Vehicles</p></div>
+
+  <div class="grid-loading" id="hallOfFameLoading"><div class="spinner"></div><p>Loading vehicles…</p></div>
+  <div class="grid-error" id="hallOfFameError" hidden><p>No sold vehicles on record yet.</p></div>
+  <div class="featured-grid" id="hallOfFameGrid"></div>
+
+  <div class="cta-divider fade-up"></div>
+  <div class="cta-box fade-up">
+    <button class="btn-cta magnetic" id="viewGarageBtn">View Garage</button>
+  </div>
+</section>
+
+<!-- ============ STATISTICS ============ -->
+<section class="section stats" id="stats">
+  <div class="stats-grid">
+    <div class="stat-item fade-up"><span class="stat-number" data-target="50" data-suffix="+">0</span><span class="stat-label">Cars Sold</span></div>
+    <div class="stat-item fade-up"><span class="stat-number" data-target="100" data-suffix="%">0</span><span class="stat-label">Trusted</span></div>
+    <div class="stat-item fade-up"><span class="stat-number" data-static="24/7">0</span><span class="stat-label">Instant Delivery</span></div>
+    <div class="stat-item fade-up"><span class="stat-number" data-static="Premium">0</span><span class="stat-label">Garage</span></div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section class="section reviews" id="reviews">
+  <img class="watermark" src="assets/logo.png" alt="" aria-hidden="true">
+  <div class="section-head fade-up"><h2>What Buyers Say</h2></div>
+  <div class="reviews-grid">
+    <div class="review-card fade-up"><div class="stars">★★★★★</div><p>Fast delivery. Trusted seller.</p><span class="review-name">— Verified Buyer</span></div>
+    <div class="review-card fade-up"><div class="stars">★★★★★</div><p>Exactly as described, smooth handover.</p><span class="review-name">— Verified Buyer</span></div>
+    <div class="review-card fade-up"><div class="stars">★★★★★</div><p>Best CPM marketplace I've used, hands down.</p><span class="review-name">— Verified Buyer</span></div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <img class="footer-logo-img" src="assets/logo.png" alt="86AutoPro">
+  <p class="footer-copy">Premium CPM Marketplace</p>
+  <div class="footer-links">
+    <a href="https://www.instagram.com/r3ycpm" target="_blank" rel="noopener">Instagram</a>
+    <a href="#contact">Contact</a>
+    <a href="#marketplace">Marketplace</a>
+    <a href="#terms">Terms</a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="script.js"></script>
+</body>
+</html>
